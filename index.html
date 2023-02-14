@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="product">
+    <picture class="product__image">
+      <source media="(min-width: 768px)" srcset="images/image-product-desktop.jpg">
+      <img class="product__image--active" src="images/image-product-mobile.jpg" alt="Perfum Image">
+    </picture>
+    <div class="product__body">
+      <div class="product__header">
+        <h4 class="fw-normal text-gray">Perfume</h4>
+        <h1 class="ff-secondary">Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <div class="product__description">
+        <p class="text-gray">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="product__description--price ff-secondary text-green">
+          $149.99
+          <span class="product__description--discount text-gray">$169.99</span>
+        </div>
+      </div>
+      <div class="product__footer">
+        <a href="#" class="product__footer--button"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Rysth">Rysth Design</a>.
+  </div>
+</body>
+
+</html>
